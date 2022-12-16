@@ -12,7 +12,7 @@ function Workoutcomp() {
   const hanndlesubmit = async (e) => {
     e.preventDefault();
     const workout = { title, load, reps }
-    const response = await fetch('http://localhost:5000/api/workouts', {
+    const response = await fetch('https://workouts-api.onrender.com/api/workouts', {
       method: 'POST',
       body: JSON.stringify(workout),
       headers: {

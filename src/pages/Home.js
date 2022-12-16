@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
 
     const fetchWorkoutes = async () => {
-      const response = await fetch('http://localhost:5000/api/workouts');
+      const response = await fetch('https://workouts-api.onrender.com/api/workouts');
       const json = await response.json();
 
       if (response.ok) {

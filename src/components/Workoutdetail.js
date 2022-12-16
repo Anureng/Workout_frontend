@@ -5,7 +5,7 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 function Workoutdetail({ workout }) {
   const { dispatch } = useWorkoutContext()
   const handleclick = async () => {
-    const response = await fetch('http://localhost:5000/api/workouts/' + workout._id, {
+    const response = await fetch('https://workouts-api.onrender.com/api/workouts/' + workout._id, {
       method: 'DELETE',
       headers: {
         "Content-Type": "application/json"
