@@ -1,5 +1,5 @@
-import React, { useReducer } from 'react'
-import { useEffect, useState } from "react";
+import React from 'react'
+import { useEffect } from "react";
 import Workoutcomp from '../components/Workoutcomp';
 import Workoutdetail from '../components/Workoutdetail';
 import { useWorkoutContext } from '../hook/useWorkoutsContext';
@@ -22,7 +22,7 @@ function Home() {
 
     fetchWorkoutes();
 
-  }, [])
+  })
 
   return (
     <div className='flex sm:flex-col lg:flex-row  justify-between bg-slate-800'>
